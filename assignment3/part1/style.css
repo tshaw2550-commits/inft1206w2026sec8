@@ -1,7 +1,29 @@
+/*
+Name: Terrence Shaw
+File: style.css
+Date: 20 Feb 2026
+Description: Styling a biography page
+*/
+
 html {
   background-color: white;
 }
 
 body {
   font: 1.2em / 1.5 system-ui;
+}
+/*
+Box styles
+*/
+body{
+    padding: 20 px;
+    width: 500px;
+    background-color: #efefef;
+    margin: 0 auto;
+}
+ul{
+    background-color: white;
+    border: 5px solid purple;
+    padding: 30px;
+    border-radius: 20px;
 }
