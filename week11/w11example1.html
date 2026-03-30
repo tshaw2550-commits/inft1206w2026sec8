@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form div {
+            margin: 20px;
+        }
+        
+    </style>
     <title>week 11</title>
 </head>
 <body>
     <h1>Week 11: Introduction to Form</h1>
+    <form action="#" method="get">
+        <div>
+            <label for="fname"> First Name</label>
+            <input type="text" id="fname" name="fname" title="First name">
+        </div>
+        <div>
+            <label for="">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+        
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="password" name="pass" id="pass">
+        </div>
+        <div>
+            <label for=""> upload your Assignment</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="">What are your hobbies and interest?</label>
+            <div>
+                <input type="checkbox" id="interest1" name="interest" value="Sports" checked>
+                <label for="interest1">Sports</label>
+                <div>
+                    <input type="checkbox" name="interest" id="interest2" value="musics">
+                    <label for="interest2">musics</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label for=""> Which OS do you prefer?</label>
+            <div>
+                <input type="radio" name="OS" id="OS1" value="windows">
+                <label for="OS1">Windows</label>
+                <input type="radio" name="OS" id="OS2" value="OS2">
+                <label for="OS1">OS2</label>
+            </div>
+        </div>
+        <div>
+            <label for="">What do you want to do this weekend?</label>
+            <select name="weekend" id="weekend">
+                <option value="Coffee">Drink Coffee</option>
+                <option value="book">Read a book</option>
+                <option>sleeping</option>
+            </select>
+        </div>
+        <div>
+            <label for="">How is the web developing going so far?</label>
+            <textarea name="" id="" rows="5" cols="20"></textarea>
+        </div>
+
+        <input type="button" value="OK">
+        <input type="submit">
+        <input type="reset">
+
+    </form>
 </body>
 </html>
