@@ -19,7 +19,7 @@ const images = [
     {filename: "pic5.jpg", alt: "Large moth on a leaf"}
 ];
 
-const baseURL = " ";
+const baseURL = "https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
 
 for (const image of images) {
     const newImage = document.createElement("img");
