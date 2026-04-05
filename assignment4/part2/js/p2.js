@@ -19,3 +19,19 @@ const images = [
     {filename: "pic5.jpg", alt: "Large moth on a leaf"}
 ];
 
+const baseURL = " ";
+
+for (const image of images) {
+    const newImage = document.createElement("img");
+    newImage.src = `${baseURL}${image.filename}`;
+    newImage.alt = image.alt;
+    newImage.tabIndex = "0";
+    thumbBar.appendChild(newImage);
+    newImage.addEventListener("click", updateDisplayedImage);
+    newImage.addEventListener("keydown", (e) => {
+        if (e.code === "Enter") {
+            updateDisplayedImage(e);
+        }
+    });
+
+}
