@@ -180,5 +180,8 @@ class EvilCircle extends shape {
   }
 }
 
+const EvilBall = new EvilCircle(random(0, width), random(0, height));
+
+
 loop();
 
