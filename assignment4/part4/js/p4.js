@@ -6,6 +6,9 @@ Challenge: Bouncing balls features
 */
 // set up canvas
 
+const para = document.querySelector('p');
+let count = 0;
+
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -100,6 +103,8 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  count++;
+  para.textContent = 'Ball count: ' + count;
 }
 
 function loop() {
@@ -120,7 +125,7 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
-class EvilCircle extends shape {
+class EvilCircle extends Shape {
     constructor(x,y) {
         super(x,y,20,20);
         this.color = "white"
@@ -179,6 +184,8 @@ class EvilCircle extends shape {
 
         if (distance < this.size + ball.size) {
           ball.exists = false;
+          count--;
+          para.textContent = 'Ball count: ' + count;
         }
       }
     }
@@ -186,6 +193,7 @@ class EvilCircle extends shape {
 }
 
 const EvilBall = new EvilCircle(random(0, width), random(0, height));
+
 
 
 loop();
