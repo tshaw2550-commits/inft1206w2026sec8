@@ -1,7 +1,7 @@
 /*
 Name: Terrence Shaw
 File: p2.js
-Date: 30 March 2026
+Date: 6 April 2026
 Challenge: Image gallery
 */
 
