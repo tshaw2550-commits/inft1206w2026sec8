@@ -102,10 +102,12 @@ function loop() {
   for (const ball of balls) {
     ball.draw();
     ball.update();
+    ball.collisionDetect();
   }
 
   requestAnimationFrame(loop);
 }
+
 loop();
 
 const testBall = new Ball(50, 100, 4, 4, "blue", 10);
