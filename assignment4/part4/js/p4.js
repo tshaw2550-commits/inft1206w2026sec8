@@ -115,5 +115,9 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
+class EvilCircle extends shape {
+    
+}
+
 loop();
 
