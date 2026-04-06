@@ -116,7 +116,12 @@ function loop() {
 }
 
 class EvilCircle extends shape {
-    
+    constructor(x,y) {
+        super(x,y,20,20);
+        this.color = "white"
+        this.size = 10;
+    }
+
 }
 
 loop();
