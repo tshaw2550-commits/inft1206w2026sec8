@@ -1,3 +1,10 @@
+/*
+  Name: Terrence Shaw
+  File: index.html
+  Date: 13 Apirl 2026
+  Challenge: Accessibility troubleshooting
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
