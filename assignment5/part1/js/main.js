@@ -1,6 +1,6 @@
 /*
   Name: Terrence Shaw
-  File: index.html
+  File: main.js
   Date: 13 Apirl 2026
   Challenge: Accessibility troubleshooting
 */
